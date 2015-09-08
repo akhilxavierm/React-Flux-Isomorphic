@@ -1,0 +1,54 @@
+body {
+  background-color:white;
+  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  color: black;
+  height: 9000px;
+  overflow: hidden;
+}
+.container {
+  width:100%;
+  height:100%;
+}
+.header {
+  width:80%;
+  height: 100px;
+  padding: 10px 10% 10px 10%;
+  //border:1px solid black;
+  text-align: center;
+}
+.searchArea{
+    width:70%;
+    height:70px;
+    padding: 10px 15% 10px 15%;
+   // border:1px solid black;
+    text-align: center;
+}
+.searchArea input {
+    margin: 0 auto;
+    width:50%;
+    height: 40px;
+    font-size: 20px;
+
+}
+.searchArea button {
+    width:8%;
+    height: 45px;
+    font:18px solid bold;
+}
+table {
+    margin: 0 auto;
+    padding-top:50px;
+    width: 40%;
+    font-size: 18px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+.search_result{
+    height:700px;
+    overflow:scroll;
+}
