@@ -4,21 +4,25 @@ var SearchResult = React.createClass({displayName: "SearchResult",
 
     render : function() {
         return (
-            React.createElement("div", {className: "search_result"},
-                React.createElement("table", null,
-                    React.createElement("tr", null, React.createElement("th", null, "Name"), React.createElement("th", null, "City"), React.createElement("th", null, "State"), React.createElement("th", null, "Country")),
-                    React.createElement("tbody", null,
-
-                        this.props.results.map(function(result) {
-                            return React.createElement("tr", null, React.createElement("td", null, result.name), React.createElement("td", null, result.city), React.createElement("td", null, result.state), React.createElement("td", null, result.country));
-                        })
-
-
-                    )
-                )
-            )
+            <div className="search_result">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Country</th>
+                    </tr>
+                    <tbody>
+                        {this.props.results.map(function(result){
+                            return  (
+                                <tr><th>{result.name}</th><th>{result.city}</th><th>{result.state}</th><th>{result.country}</th></tr>
+                                )
+                        })}
+                    </tbody>
+                </table>
+            </div>
         )
-    }
+    
 
-});
+}});
 module.exports = SearchResult;

@@ -4,9 +4,7 @@ var Header = React.createClass({displayName: "Header",
 
     render : function() {
         return (
-            React.createElement("h1", {className: "header"},
-                this.props.name
-            )
+			<h1 className="header">{this.props.name}</h1>
         )}
 });
 

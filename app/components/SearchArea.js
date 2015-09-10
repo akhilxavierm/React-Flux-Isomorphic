@@ -9,10 +9,11 @@ var SearchArea = React.createClass({displayName: "SearchArea",
     },
     render : function() {
         return (
-            React.createElement("div", {className: "searchArea"},
-                React.createElement("input", {type: "text", placeholder: "Search here....", onChange: this.changeSearch}),
-                React.createElement("button", {onClick: this.search}, "Search")
-            )
+            <div className="searchArea">
+                <input type="text" placeholder="Search here..." onChange={this.changeSearch}>
+                    <button onClick={this.search}>Search</button>
+                </input>
+            </div>
         )},
     changeSearch : function(event) {
         var text = event.target.value;

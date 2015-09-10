@@ -22,13 +22,11 @@ var ReactApp = React.createClass({displayName: "ReactApp",
     },
     render: function () {
         return (
-            React.createElement("div", {className: "container"},
-                React.createElement(Header, {name: "Seach Page"}),
-                React.createElement(SearchArea, null),
-                React.createElement(SearchResult, {results: this.state.result})
-            )
-
-
+            <div className="container">
+                <Header name="Search Page"></Header>
+                <SearchArea></SearchArea>
+                <SearchResult results={this.state.result}></SearchResult>
+            </div>
         );
     },
     changeSearch:function(event) {
