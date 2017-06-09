@@ -23,7 +23,7 @@ var ReactApp = React.createClass({displayName: "ReactApp",
     render: function () {
         return (
             <div className="container">
-                <Header name="Search Page"></Header>
+                <Header name="Search11111111111 Page"></Header>
                 <SearchArea></SearchArea>
                 <SearchResult results={this.state.result}></SearchResult>
             </div>
